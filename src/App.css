@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    width: 90vw;
-    height: 400px;
-    padding-left: 15px;
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
 }
 
 .whiteSquare {
@@ -23,24 +23,33 @@
 
 .highlighted {
     background-color: #126e00;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.root{
+#root {
     display: flex;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
 }
 h1 {
     font-size: 25px;
     text-align: center;
 }
 
-p{
+h3 {
     font-size: 18px;
+}
+@media (min-width: 450px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
 }
 
 .blackPlayer {
@@ -48,7 +57,7 @@ p{
 }
 
 .whitePlayer {
-    color: red
+    color: red;
 }
 div > img {
     width: 100%;
@@ -62,16 +71,15 @@ div > img {
     flex-direction: column;
     margin-bottom: 20px;
 }
-.gameEnd h3{
+.gameEnd h3 {
     color: #126e00;
 }
 
-.gameEnd button{
+.gameEnd button {
     margin-left: auto;
     margin-right: auto;
     width: 120px;
     height: 30px;
     border-radius: 8px;
     align-self: center;
-
 }
