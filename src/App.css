@@ -11,11 +11,13 @@
 .whiteSquare {
     background-color: #ffff00;
     border: 1px solid gray;
+    min-height: 48px;
 }
 
 .blackSquare {
     background-color: #908070;
     border: 1px solid gray;
+    min-height: 48px;
 }
 
 .boarded {
